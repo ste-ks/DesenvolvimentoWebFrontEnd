@@ -1,0 +1,146 @@
+Framework
+
+- Conjunto de ferramentas, bibliotecas e padrões que fornecem uma estrutura para desenvolvimento de software. Um framework fornece um conjunto de funcionalidades pré- construídas que podem ser utilizadas para acelerar o desenvolvimento de um software
+
+· Geralmente, um framework tem uma arquitetura bem definida e uma documentação extensa, que ajuda o desenvolvedor a entender como as diferentes partes do sistema se interconectam e a desenvolver mais rapidamente
+
+Arquitetura
+
+3. Aplicação para os nossos Clientes
+-----------------------------------
+* Web Api
+* Aplicação Web
+* Aplicação Console
+* Aplicação Desktop
+* Mobile
+
+2. Framework
+------------
+* C# (C Sharp) -> 1. NET Core, 2. Net Framework
+* Java         -> 1. Spring boot, 2. Struts
+* Javascript   -> 1. Reactive, 2. Reactive native, 3. Angular, 4. Angular js, 5. Node, 6. Vue Js, 7. *Jquery
+* Python       -> 1. Django
+* Php          -> 1. Laravel, 2. Cake php, 3. Zend Framework
+* Golang       -> 1. Martini
+
+1. Linguagem de programação
+---------------------------
+* C# (C Sharp)
+* Java
+* Javascript
+* Python
+* Php
+* Golang
+
+----------------------------------------------------------------------------------------------------------------------------------------
+Arquitetura MVC
+
+                 /----->[ Model ] <================\
+                 |      |                          |
+                 |      |                          | (Atualiza /
+                 |      | (Atualiza)               |  Notifica)
+                 |      v                          |
+                 |------[ View ] --------.         |
+                 |      ^                |         |
+                 |      |                | (Ações do
+                 |      | (Renderiza /   |  Usuário)
+                 |      |  Atualiza)     v
+                 |      \------------ [ Controller ]
+                 |                       ^
+                 |                       |
+                 \------------------------/
+
+
+View
+ - tela saida
+Model
+ - saida, forma de expressar, entidade
+Controller
+ - orquestra o modelo
+
+
+React
+
+- Biblioteca JavaScript de código aberto para construir interfaces de usuário. Permite criar componentes reutilizáveis e gerenciar o estado de uma aplicação de forma eficiente
+
+Exe:
+function Video({ video }) {
+    return (
+        <div>
+            <Thumbnail video={video} />
+            <a href={video.url}>
+                <h3>{video.title}</h3>
+                <p>{video.description}</p>
+            </a>
+        <LikeButton video={video} />
+        </div>
+    );
+}
+
+
+Angular
+
+[ UI ] --------------------------------------┬------------------------------
+  • Web components                           │  .component.html
+  • Angular bindings                         │
+                                             │
+[ Component ] -------------------------------┼------------------------------
+  • API Library [TS] [JS]                    │  .component.ts
+  • State                                    │
+                                             │
+[ Connector ] -------------------------------┼------------------------------
+  • HttpClient                               │  .service.ts
+                                             │
+---------------------------------------------┴------------------------------
+
+Vue
+
+No núcleo do Vue.js está um sistema que nos permite declarativamente renderizar dados no DOM (Document Object Model) usando uma sintaxe de template simples:
+
+    - html
+    <div id="app">
+        {{ message }}
+    </div>
+
+    -JS
+    var app = new Vue({
+        el: '#app',
+        data: {
+            message: 'ola vue'
+        }
+    })
+
+----------------------------------------------------------------------------------------------------------------------------------------
+
+Tipos de desenvolvimento
+
+Traditional Page Lifecycle
+
+                        ┌────────────────────────┐
+                        │      Client            │
+                        └────────────────────────┘
+                          │   ▲          │[Form ▲
+                          │   │          │ POST]│
+       Initial GET request│   │          │      │
+                          │   │[Página]  │      │[Página]
+                          │   │          │      │
+                          ▼   │          ▼      │
+                        ┌────────────────────────┐
+                        │      Server            │
+                        └────────────────────────┘
+
+SPA (Single Page) Lifecycle
+
+                        ┌────────────────────────┐
+                        │      Client            │
+                        └────────────────────────┘
+                          │   ▲          │[AJAX]▲
+                          │   │          │      │
+       Initial GET request│   │          │      │JSON
+                          │   │[Página]  │      │[{...}]
+                          │   │          │      │
+                          ▼   │          ▼      │
+                        ┌────────────────────────┐
+                        │      Server            │
+                        └────────────────────────┘
+
