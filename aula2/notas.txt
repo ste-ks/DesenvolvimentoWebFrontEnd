@@ -1,0 +1,3 @@
+npm i -g @angular/cli       // instalacao do angular CLI globalmente
+ng new nomeprojeto          // criacao de um novo projeto algular
+rmdir /s /q unidade2        // caso queira remover o projeto
