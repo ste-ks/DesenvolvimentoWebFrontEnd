@@ -6,7 +6,7 @@
   },
   "newProjectRoot": "projects",
   "projects": {
-    "projetoAngular": {
+    "projeto-angular": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -26,15 +26,7 @@
             ],
             "styles": [
               "src/styles.css"
-            ],
-            "server": "src/main.server.ts",
-            "outputMode": "server",
-            "security": {
-              "allowedHosts": []
-            },
-            "ssr": {
-              "entry": "src/server.ts"
-            }
+            ]
           },
           "configurations": {
             "production": {
@@ -64,10 +56,10 @@
           "builder": "@angular/build:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "projetoAngular:build:production"
+              "buildTarget": "projeto-angular:build:production"
             },
             "development": {
-              "buildTarget": "projetoAngular:build:development"
+              "buildTarget": "projeto-angular:build:development"
             }
           },
           "defaultConfiguration": "development"
