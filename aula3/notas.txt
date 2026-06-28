@@ -1,0 +1,92 @@
+TypeScript
+Quando utilizados em conjunto, o TypeScript, módulos e componentes fornecem uma base sólida para o desenvolvimento de aplicativos escaláveis e robustos no Angular. Eles ajudam a melhorar a legibilidade, a modularidade e a reutilização do código, promovendo uma estrutura organizada e facilitando a colaboração entre os desenvolvedores. Além disso, o TypeScript fornece recursos avançados, como a tipagem estática, que contribuem para a detecção precoce de erros e uma melhor experiência de desenvolvimento
+
+-------------------------------------------------------------------------------------------------------------------------------------
+Algumas configurações
+1. tsconfig.json (já visto): este é o arquivo
+de configuração principal do TypeScript.
+Ele define as opções de compilação e as 
+configurações do projeto. Nele, você pode 
+especificar o diretório de saída, a versão
+do ECMAScript a ser usada, habilitar ou 
+desabilitar recursos específicos
+do TypeScript e muito mais
+
+2. tslint.json: este arquivo define as regras e 
+configurações para o linter TypeScript. O linter
+ajuda a manter um código consistente e livre de 
+erros, aplicando regras de estilo e boas práticas 
+de programação. Você pode definir suas próprias 
+regras ou usar configurações predefinidas
+
+3. angular.json: este arquivo de configuração é 
+específico do Angular e define as configurações 
+do projeto, como as dependências, os arquivos a 
+serem compilados, a estrutura do diretório, as 
+tarefas de construção, a configuração do servidor de desenvolvimento e muito mais. É um arquivo 
+essencial para a configuração
+geral do projeto Angular
+
+4. karma.conf.js: se você estiver usando o 
+Karma como test runner para seus testes 
+unitários no Angular, este arquivo contém
+a configuração para a execução dos testes. 
+Você pode definir os arquivos a serem 
+testados, os frameworks a serem usados, os reporters de resultados e outras
+opções relacionadas aos testes
+
+5. protractor.conf.js: se você estiver usando 
+o Protractor para executar testes de ponta a 
+ponta (e2e) no Angular, este arquivo contém 
+a configuração para os testes e2e. Você pode 
+definir os caminhos dos arquivos de teste, 
+as configurações do navegador, as URLs a 
+serem testadas e outras opções
+relevantes para os testes e2e
+
+-------------------------------------------------------------------------------------------------------------------------------------
+Lifecycly hooks – ganchos ou gatilhos do ciclo de vida dos componentes
+
+Eventos
+ngOnChanges: este método é chamado 
+quando uma ou mais propriedades vinculadas 
+a um componente mudam. Ele recebe um 
+objeto que contém as mudanças detectadas
+
+ngOnInit: este método é chamado
+quando um componente é inicializado. Ele é 
+executado depois que todas as propriedades 
+vinculadas são definidas e depois que o 
+construtor do componente é executado
+
+ngDoCheck: este método é chamado durante 
+cada detecção de mudança do Angular. Ele 
+permite que você execute ações 
+personalizadas para verificar se
+o estado do componente mudou
+
+ngAfterContentInit: este método
+é chamado depois que o Angular
+inicializa o conteúdo de um componente
+que usa a diretiva ng-content
+
+ngAfterContentChecked: este método é chamado 
+depois que o Angular verifica o conteúdo de
+um componente que usa a diretiva ng-content
+
+ngAfterViewInit: este método é chamado depois 
+que o Angular inicializa a exibição de um 
+componente e suas visualizações filhas
+
+ngAfterViewChecked: este método é chamado 
+depois que o Angular verifica a exibição de
+um componente e suas visualizações filhas
+
+ngOnDestroy: este método é chamado quando um componente é destruído. É
+usado para limpar recursos, como
+eventos ou assinaturas de observáveis
+
+
+-------------------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------

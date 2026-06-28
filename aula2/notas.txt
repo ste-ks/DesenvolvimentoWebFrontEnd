@@ -2,4 +2,5 @@ npm i -g @angular/cli               // instalacao do angular CLI globalmente
 ng new nomeprojeto                  // criacao de um novo projeto algular
 rmdir /s /q unidade2                // caso queira remover o projeto
 ng serve                            // inicializa o servidor
-ng generate component olamundo      
+ng generate component olamundo      // criacao de componentes
+npm i @angular/material             // instalacao da biblioteca de componentes de interface (UI)

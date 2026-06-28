@@ -1,0 +1,4 @@
+instalar
+ - node-js
+ - npm
+    
