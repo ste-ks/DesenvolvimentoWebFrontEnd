@@ -1,0 +1,14 @@
+Injeção de dependências
+
+- Injeção de dependência é uma técnica para
+livrar ou remover o acoplamento entre os
+objetos e seus colaboradores ou dependentes
+
+· Em vez de instanciar objetos colaboradores
+diretamente, ou usar referências estáticas,
+esses colaboradores são fornecidos para a
+classe dependente de um modo particular
+
+-----------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------
